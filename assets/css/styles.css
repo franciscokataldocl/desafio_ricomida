@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    --cabin:"Cabin", sans-serif;
+    --lobster:"Lobster", sans-serif;
+
+    --regular:400;
+    --bold:700;
+
+    --grey:#373a3c;
+    --grey-light:#dddddd;
+    --black:#000;
+    --white:#fff;
+    --red:#dc3545;
+}
+body, html{
+    font-size:14px;
+    font-family:var(--cabin);
+}
+.max-width{
+    max-width:1000px;
+}
+.bg-grey{
+    background:var(--grey);
+}
+.bg-grey-light{
+    background:var(--grey-light);
+}
+.bg-black{
+    background:var(--black);
+}
+.bg-white{
+    background:var(--white);
+}
+.bg-red{
+    background:var(--red);
+}
+.c-grey{
+    color:var(--grey);
+ }
+ .c-grey-light{
+    color:var(--grey-light);
+ }
+ .c-black{
+    color:var(--black);
+ }
+ .c-white{
+    color:var(--white);
+ }
+ .c-red{
+    color:var(--red);
+ }
+
+ .navbar-brand h2{
+    font-family: var(--lobster);
+    font-weight: var(--bold);
+    font-size:2rem;
+ }
+ .nav-item .active{
+    color:var(--white)!important;
+ }
+ .nav-item a:hover{
+    color:var(--red)!important;
+ }
+ .intro-section .img-cutter{
+    overflow: hidden;
+    max-height: 400px;
+ }
+ .intro-section .title{
+    font-size:2.3rem;
+    
+ }
+
+ .intro-section .subtitle{
+    font-size:1.2rem;
+    border-top: var(--black) solid 1px;
+ }
+
+ .carousel-item .img-cutter{
+    border-radius: 2px;
+    overflow: hidden;
+    width:100%;
+    max-height: 200px;
+ }
+ .shadow-1{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ }
+
+ .recipe-section ul li,  .recipe-section ol li{
+    color:var(--grey);
+    font-size: 1rem;
+    font-weight: var(--regular);
+    line-height: 1.1rem;
+ }
+ .recipe-section ul li{
+    margin-bottom:2%;
+ }
+ .recipe-section ol li{
+    margin-bottom:5%;
+ }
+.recipe-section h4{
+    margin-bottom:5%;
+    font-weight: var(--bold);
+    text-decoration:underline;
+    text-underline-offset: 6px;
+}
+.related-recipes{
+   border-top: var(--grey) solid 1px;
+}
+.related-recipes .card-title{
+   font-size:1.2rem;
+   font-weight: var(--bold);
+}
+.newsletter-section{
+padding:10% 0;
+}
+h3{ font-size:3rem;
+   font-weight: var(--bold);
+   margin-bottom:.6rem;
+}
+
+.newsletter-section h4{
+   font-size:1.5rem;
+   margin-bottom:2rem;
+}
+.newsletter-section h4 strong{
+   font-family: var(--lobster);
+   
+}
+.newsletter-section button{
+   padding-left:4rem;
+   padding-right:4rem;
+}
+footer h3{
+   font-family: var(--lobster);
+   font-size: 2rem;
+}
+.carousel-indicators [data-bs-target] {
+   box-sizing: content-box;
+   flex: 0 1 auto;
+   width: 10px; /* change width */
+   height: 10px; /* change height */
+   padding: 0;
+   margin-right: 3px;
+   margin-left: 3px;
+   text-indent: -999px;
+   cursor: pointer;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 0;
+   border-top: 10px solid transparent;
+   border-bottom: 10px solid transparent;
+   opacity: .5;
+   transition: opacity .6s ease;
+   border-radius: 100%; 
+}
+
+.card-title-container{
+   height:50px;
+}
